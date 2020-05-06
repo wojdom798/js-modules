@@ -1,0 +1,75 @@
+@import url('https://fonts.googleapis.com/css?family=Open+Sans&display=swap');
+
+:root {
+  --delay: .1s;
+  --bg-delay: .2s;
+  --accent-color: rgb(53, 90, 255);
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  min-height: 100vh;
+  background-color: #fcfcfc;
+  font-family: 'Open Sans', sans-serif;
+  font-size: 16px;
+}
+
+.page {
+  min-width: 100%;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+#calculator-container {
+
+}
+
+#calculator-container > div {
+  margin-bottom: 7px;
+}
+
+#calculator-container input[type="text"] {
+  padding: 5px;
+  outline: none;
+  border: 1px solid #777;
+  font-size: 1.1rem;
+  color: #444;
+  transition: border var(--delay) ease-in-out;
+}
+
+#calculator-container input[type="text"]:focus {
+  border: 1px solid var(--accent-color);
+}
+
+#calculator-container .operation {
+  padding: 0 7px;
+}
+
+#calculator-container .output {
+  padding: 0 7px;
+}
+
+#calculator-container button {
+  padding: 5px 10px;
+  outline: none;
+  border: 1px solid #777;
+  background-color: transparent;
+  font-size: 1.1rem;
+  color: #444;
+  cursor: pointer;
+  transition: background-color var(--bg-delay) linear,
+              color var(--bg-delay) linear;
+}
+
+#calculator-container button:hover {
+  background-color: var(--accent-color);
+  color: #fff;
+}
