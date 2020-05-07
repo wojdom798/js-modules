@@ -7,7 +7,10 @@
 require.config({
   baseUrl: 'js/',
   paths: {
-    jquery: 'vendor/jquery-3.5.1.min'
+    jquery: [
+      'https://code.jquery.com/jquery-3.5.1.slim.min',
+      'vendor/jquery-3.5.1.min'
+    ]
   }
 });
 
